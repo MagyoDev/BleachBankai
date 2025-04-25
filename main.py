@@ -17,12 +17,14 @@ class Hitsugaya(Personagem):
     def bankai(self):
         print(f"{self.nome} ativa Daiguren Hyorinmaru! O inimigo começa a ser congelado!")
 
+def simular_batalha():
+    personagens = [
+        Ichigo("Ichigo Kurosaki"),
+        Byakuya("Byakuya Kuchiki"),
+        Hitsugaya("Tōshirō Hitsugaya")
+    ]
+    for p in personagens:
+        p.bankai()
+
 if __name__ == "__main__":
-    ichigo = Ichigo("Ichigo Kurosaki")
-    ichigo.bankai()
-
-    byakuya = Byakuya("Byakuya Kuchiki")
-    byakuya.bankai()
-
-    hitsugaya = Hitsugaya("Tōshirō Hitsugaya")
-    hitsugaya.bankai()
+    simular_batalha()
