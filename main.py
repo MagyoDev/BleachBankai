@@ -5,7 +5,10 @@ class Personagem:
     def bankai(self):
         raise NotImplementedError("Bankai não implementada.")
 
-# Exemplo de uso (ainda sem personagem específico)
+class Ichigo(Personagem):
+    def bankai(self):
+        print(f"{self.nome} ativa Tensa Zangetsu! Velocidade e ataque aumentados drasticamente!")
+
 if __name__ == "__main__":
-    p = Personagem("Genérico")
-    p.bankai()
+    ichigo = Ichigo("Ichigo Kurosaki")
+    ichigo.bankai()
